@@ -622,14 +622,11 @@ p {
     border: none;
 }
 
-.review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-check-mark {
+.review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-custom-checkbox .review-form-check-mark {
     fill: #F4F4FD;
-
-}
-
-.review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-check-mark {
     opacity: 1;
 }
+
 
 .review-form-policy-label {
     cursor: pointer;
