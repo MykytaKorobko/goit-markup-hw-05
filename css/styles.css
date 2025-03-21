@@ -184,7 +184,7 @@ p {
 
 }
 
-.order-button {
+.page-button {
     margin: 0 auto;
     display: block;
     min-width: 169px;
@@ -202,8 +202,8 @@ p {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.order-button:hover,
-.order-button:focus {
+.page-button:hover,
+.page-button:focus {
     background-color: #404bbf
 }
 
@@ -438,7 +438,57 @@ p {
     background-color: #31d0aa;
 }
 
-/* Backdrop */
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-input {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    outline: transparent;
+    background-color: transparent;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-input::placeholder {
+    color: #fff;
+}
+
+.subscribe-botton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border: none;
+    fill: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+}
+
+/* Modal window */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -456,7 +506,6 @@ p {
     pointer-events: auto;
 }
 
-/* Modal window */
 .modal {
     position: absolute;
     top: 50%;
@@ -620,12 +669,13 @@ p {
 .review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-custom-checkbox {
     background-color: #404bbf;
     border: none;
+    fill: #F4F4FD;
 }
 
-.review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-custom-checkbox .review-form-check-mark {
-    fill: #F4F4FD;
+.review-form-privacy-checkbox:checked+.review-form-policy-label .review-form-check-mark {
     opacity: 1;
 }
+
 
 
 .review-form-policy-label {
@@ -642,67 +692,4 @@ p {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-}
-
-.review-form-submit-button {
-    margin: 0 auto;
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;
-    cursor: pointer;
-    background-color: #4d5ae5;
-    border: 0px;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.review-form-submit-button:hover,
-.review-form-submit-button:focus {
-    background-color: #404bbf;
-}
-
-
-.subscribe-input {
-    border: 1px solid #fff;
-    border-radius: 4px;
-    width: 264px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #fff;
-    outline: transparent;
-    background-color: transparent;
-    padding: 8px 16px;
-}
-
-.subscribe-botton {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 16px;
-    border-radius: 4px;
-    padding: 8px 24px;
-    width: 165px;
-    height: 40px;
-    background: #4d5ae5;
-    border: none;
-    fill: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-}
-
-.third-column {
-    display: flex;
 }
